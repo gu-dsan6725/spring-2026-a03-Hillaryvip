@@ -1,0 +1,27 @@
+[project]
+name = "advanced-rag"
+version = "0.1.0"
+description = "Advanced RAG Assignment: Code Q&A and Multi-Source Retrieval"
+requires-python = ">=3.10"
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-text-splitters>=0.3.0",
+    "litellm>=1.0.0",
+    "faiss-cpu>=1.7.0",
+    "sentence-transformers>=2.2.0",
+    "python-dotenv>=1.0.0",
+    "ipykernel>=6.0.0",
+    "rank-bm25>=0.2.0",
+    "cohere>=5.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+]
